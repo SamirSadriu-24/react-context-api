@@ -5,16 +5,17 @@ import AboutUs from "./componenti/AboutUs";
 import Navbar from "./componenti/Navbar";
 import Prodotti from "./componenti/Prodotti.Jsx";
 import CartaProdotto from "./componenti/cartaprodotto";
-import { Budget } from "./componenti/BudgetContext";
+import { BudgetProvider } from "./componenti/BudgetContext";
 import './App.css'
 
 function App() {
 
 
   return (
-    <Budget>
+    <BudgetProvider>
       <BrowserRouter>
         <Navbar />
+        
         <Routes>
           <Route index element={<Home />} />
           <Route path="aboutus" element={<AboutUs />} />
@@ -22,7 +23,7 @@ function App() {
           <Route path="prodotti/:id" element={<CartaProdotto />} />
         </Routes>
       </BrowserRouter>
-    </Budget>
+    </BudgetProvider>
   )
 }
 

@@ -170,3 +170,13 @@ button {
     font-size: 20px;
     color:#7e208f
 }
+
+.Budget{
+    min-width: 200px;
+    text-align: center;
+    height: 50px;
+}
+.Budget:hover{
+    color:#7e208f;
+    background-color:#FFD700;
+}
